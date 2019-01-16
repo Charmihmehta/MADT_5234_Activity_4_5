@@ -24,4 +24,5 @@ class TestTribalScreaming {
 		assertEquals("You are amazing",result);
 		
 	}
+
 }
