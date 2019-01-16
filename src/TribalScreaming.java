@@ -24,7 +24,7 @@ public class TribalScreaming {
 		{
 			if(name.length == 2)
 			{
-				return name[0] + " and " + name[1] + "are amazing";
+				return name[0] + " and " + name[1] + " are amazing";
 			}
 			
 		}
