@@ -5,7 +5,7 @@ public class TribalScreaming {
 	{
 		if(name != null)
 		{
-			return name + " is amazing ";
+			return name + " is amazing";
 		}
 		return name;
 	}

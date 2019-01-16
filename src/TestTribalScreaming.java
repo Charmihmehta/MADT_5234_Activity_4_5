@@ -14,7 +14,7 @@ class TestTribalScreaming {
 	public void testOnePerson() {
 		TribalScreaming t = new TribalScreaming();
 		String result = t.scream("Peter");
-		assertEquals("Peter",result);
+		assertEquals("Peter is amazing",result);
 		
 	}
 
