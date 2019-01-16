@@ -31,4 +31,14 @@ class TestTribalScreaming {
 		assertEquals("PETER IS AMAZING",result);
 		
 	}
+	
+	@Test
+	public void testTwoPersonShouting() {
+		TribalScreaming t = new TribalScreaming();
+		String[] expected_op = new String[] {"Peter","Jigesha"};
+		String result = t.scream_name(expected_op);
+		assertEquals("Peter and Jigesha are amazing",result);
+		
+	}
+	
 }
