@@ -58,5 +58,14 @@ class TestTribalScreaming {
 		assertEquals("Peter, Jigesha and Marcos are amazing",result);
 		
 	}
+	// Sixth factor
+		@Test
+		public void testMorePersonShouting() {
+			TribalScreaming t = new TribalScreaming();
+			String[] expected_op = new String[] {"Peter","Marcos","Albert","JIGESHA"};
+			String result = t.scream_name(expected_op);
+			assertEquals("Peter, Marcos, and Albert are amazing. JIGESHA ALSO!",result);
+			
+		}
 	
 }
