@@ -20,14 +20,29 @@ public class TribalScreaming {
 	
 	public String scream_name(String[] name)
 	{
-		for(int i = 0; i <= name.length; i++)
-		{
+		
 			if(name.length == 2)
 			{
 				return name[0] + " and " + name[1] + " are amazing";
 			}
 			
-		}
+			else if(name.length >2)
+			{
+				String names = name[0];
+				for(int j = 1 ; j<name.length ; j++)
+				{
+					if(j == name.length-1)
+					{
+						names += " and " + name[j] + " are amazing" ;
+					}
+					else
+						
+					names += ", " + name[j]  ;
+				}
+				
+				return names;
+			}
+		
 		return "";
 	}
 
