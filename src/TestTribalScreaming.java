@@ -24,5 +24,11 @@ class TestTribalScreaming {
 		assertEquals("You are amazing",result);
 		
 	}
-
+	@Test
+	public void testPersonShouting() {
+		TribalScreaming t = new TribalScreaming();
+		String result = t.scream("PETER");
+		assertEquals("PETER IS AMAZING",result);
+		
+	}
 }
