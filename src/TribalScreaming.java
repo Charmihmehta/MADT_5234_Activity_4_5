@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
 
 public class TribalScreaming {
 	
@@ -26,24 +29,50 @@ public class TribalScreaming {
 				return name[0] + " and " + name[1] + " are amazing";
 			}
 			
-			else if(name.length >2)
-			{
+		
+			else {
+				List<String> regular = new ArrayList<String>();
+				String uppercase = null ;
 				String names = name[0];
-				for(int j = 1 ; j<name.length ; j++)
+				String[] array = null;
+				for(int i = 0; i< name.length ; i++)
 				{
-					if(j == name.length-1)
+				
+					if(name[i] == name[i].toUpperCase())
 					{
-						names += " and " + name[j] + " are amazing" ;
+						 uppercase = name[i];
 					}
 					else
+					{
+						regular.add(name[i]);  
 						
-					names += ", " + name[j]  ;
+						
+					}
+					
 				}
-				
-				return names;
+				 String[] itemsArray = new String[regular.size()];
+			        itemsArray = regular.toArray(itemsArray);
+			       // for(String s : itemsArray)
+			           // System.out.println(s);
+			        for(int j = 1 ; j<itemsArray.length ; j++)
+					{
+						if(j == itemsArray.length-1)
+						{
+							names += " and " + name[j]  ;
+						}
+						else
+							
+						names += ", " + name[j]  ;
+					}
+			      
+			       if(uppercase != null)
+				return names + " are amazing. " + uppercase + " ALSO!";
+			       else
+			    	   return names + " are amazing.";
+			    	   
 			}
 		
-		return "";
+		
 	}
 
 }

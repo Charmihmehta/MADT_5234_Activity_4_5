@@ -55,7 +55,7 @@ class TestTribalScreaming {
 		TribalScreaming t = new TribalScreaming();
 		String[] expected_op = new String[] {"Peter","Jigesha","Marcos"};
 		String result = t.scream_name(expected_op);
-		assertEquals("Peter, Jigesha and Marcos are amazing",result);
+		assertEquals("Peter, Jigesha and Marcos are amazing.",result);
 		
 	}
 	// Sixth factor
@@ -64,7 +64,7 @@ class TestTribalScreaming {
 			TribalScreaming t = new TribalScreaming();
 			String[] expected_op = new String[] {"Peter","Marcos","Albert","JIGESHA"};
 			String result = t.scream_name(expected_op);
-			assertEquals("Peter, Marcos, and Albert are amazing. JIGESHA ALSO!",result);
+			assertEquals("Peter, Marcos and Albert are amazing. JIGESHA ALSO!",result);
 			
 		}
 	
